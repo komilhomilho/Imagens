@@ -14,7 +14,8 @@ Este repositório serve exclusivamente para hospedagem de imagens e recursos vis
 | <img src="https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/599d82fe605ffa4b9afb530d6d48ba1f.jpg" width="100"> | `Logo_Ticket` | [Clique aqui](https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/599d82fe605ffa4b9afb530d6d48ba1f.jpg) |
 | <img src="https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/logoSemFundo.png" width="100"> | `Logo-Sem_fundo` | [Clique aqui](https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/Csharp_Logo.png) |
 | <img src="https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/Csharp_Logo.png" width="100"> | `C#-Logo` | [Clique aqui](https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/Csharp_Logo.png) |
-| <img src="https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/image.webp" width="100"> | `Aviso` | [Clique aqui](https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/image.webp) |
+| <img src="https://raw.githubusercontent.com/komilhomilho/Imagens/refs/heads/main/%E2%80%94Pngtree%E2%80%94pink%20love%20exquisite%20pattern%20dividing_3780525.png" width="100"> | `Barra_Divisoria` | [Clique aqui](https://raw.githubusercontent.com/komilhomilho/Imagens/refs/heads/main/%E2%80%94Pngtree%E2%80%94pink%20love%20exquisite%20pattern%20dividing_3780525.png) |
+| <img src="" width="100"> | `Aviso` | [Clique aqui](https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/image.webp) |
 
 
 
