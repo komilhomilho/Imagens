@@ -1,4 +1,5 @@
 import os
+import urllib.parse
 
 EXTENSOES_IMAGEM = (".png", ".jpg", ".jpeg", ".webp", ".gif")
 PASTA_RAIZ = "."
@@ -7,14 +8,17 @@ README_PATH = "README.md"
 def gerar_tabela():
     linhas_tabela = []
     
-    # Lista os arquivos do repositório
     for arquivo in sorted(os.listdir(PASTA_RAIZ)):
         if arquivo.lower().endswith(EXTENSOES_IMAGEM):
-            # Monta o link raw padrão do GitHub para o usuário atual
-            link_raw = f"https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/{arquivo}"
-            nome_amigavel = arquivo.rsplit('.', 1)[0].replace('-', '_').title()
+            # Codifica corretamente espaços e caracteres especiais para a URL
+            arquivo_url = urllib.parse.quote(arquivo)
+            link_raw = f"https://raw.githubusercontent.com/alexpietro2007/Imagens/refs/heads/main/{arquivo_url}"
             
-            # Linha da tabela no formato que você usa
+            # Limpa o nome amigável para exibir na coluna do meio
+            nome_limpo = arquivo.rsplit('.', 1)[0].replace('—', '').replace('-', ' ').strip()
+            nome_amigavel = nome_limpo.title() if nome_limpo else arquivo
+            
+            # Monta a linha com o link encapsulado corretamente
             linha = f'| <img src="{link_raw}" width="100"> | `{nome_amigavel}` | [Clique aqui]({link_raw}) |'
             linhas_tabela.append(linha)
 
@@ -23,7 +27,6 @@ def gerar_tabela():
 def atualizar_readme():
     tabela_gerada = gerar_tabela()
     
-    # Conteúdo estruturado do README
     conteudo_novo = f"""# 📦 Repositório de Assets | Imagens Online
 
 Este repositório serve exclusivamente para hospedagem de imagens e recursos visuais, atualizado automaticamente.
