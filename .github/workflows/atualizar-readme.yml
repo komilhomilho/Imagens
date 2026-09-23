@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# Adicione estas permissões no topo do arquivo do workflow também para garantir
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -25,3 +29,7 @@ jobs:
         with:
           commit_message: "docs: atualização automática do README com novas imagens"
           branch: main
+          # Adicione esta linha para injetar o token de acesso do repositório:
+          file_pattern: README.md
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
